@@ -2,10 +2,10 @@
 echo "This is the web app";
 echo "<br>";
 
-echo "Remote IP is :";
-echo $_SERVER["REMOTE_ADDR"];
-
-echo "Real IP is :";
+echo "Remote IP is : ";
+echo $_SERVER['REMOTE_ADDR'];
+echo "<br>";
+echo "X FORWARDED FOR :";
 echo $_SERVER['HTTP_X_FORWARDED_FOR'];
 
 function get_ip_address() {
