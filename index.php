@@ -1,11 +1,5 @@
 <?php
 
-echo "Test backend PHP, your IP is :";
-echo $_SERVER["REMOTE_ADDR"];
-echo "<br>";
-echo "LB ip is :";
-echo get_ip_address();
-
 function get_ip_address() {
   // check for shared internet/ISP IP
   if (!empty($_SERVER['HTTP_CLIENT_IP']) && $this->validate_ip($_SERVER['HTTP_CLIENT_IP']))
@@ -44,4 +38,9 @@ function validate_ip($ip) {
      self::$ip = $ip;
      return true;
  }
-i?>
+
+$return_ip = get_ip_address();
+echo "Test backend PHP, your IP is :";
+echo "$return_ip";
+
+?>
