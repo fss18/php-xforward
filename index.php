@@ -4,7 +4,7 @@ echo "Test backend PHP, your IP is :";
 echo $_SERVER["REMOTE_ADDR"];
 echo "<br>";
 echo "LB ip is :";
-echo $_SERVER["HTTP_CLIENT_IP"];
+echo get_ip_address();
 
 function get_ip_address() {
   // check for shared internet/ISP IP
