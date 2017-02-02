@@ -2,8 +2,11 @@
 echo "This is the web app";
 echo "<br>";
 
-echo "Your IP is :";
+echo "Remote IP is :";
 echo $_SERVER["REMOTE_ADDR"];
+
+echo "Real IP is :";
+echo $_SERVER['HTTP_X_FORWARDED_FOR'];
 
 function get_ip_address() {
   // check for shared internet/ISP IP
