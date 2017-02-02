@@ -4,9 +4,14 @@ echo "<br>";
 
 echo "Remote IP is : ";
 echo $_SERVER['REMOTE_ADDR'];
+
 echo "<br>";
+
 echo "X FORWARDED FOR :";
 echo $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+echo "<br>";
+echo gethostname();
 
 function get_ip_address() {
   // check for shared internet/ISP IP
