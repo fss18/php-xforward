@@ -11,6 +11,7 @@ echo "X FORWARDED FOR :";
 echo $_SERVER['HTTP_X_FORWARDED_FOR'];
 
 echo "<br>";
+echo "Back-end server name :";
 echo gethostname();
 
 function get_ip_address() {
