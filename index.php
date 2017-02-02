@@ -1,4 +1,6 @@
 <?php
+echo "This is the web app";
+echo "<br>";
 
 function get_ip_address() {
   // check for shared internet/ISP IP
@@ -40,7 +42,6 @@ function validate_ip($ip) {
  }
 
 $return_ip = get_ip_address();
-echo "Test backend PHP, your IP is :";
-echo "$return_ip";
-
+echo "Your IP is :";
+echo $return_ip;
 ?>
