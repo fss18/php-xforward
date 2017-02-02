@@ -2,6 +2,10 @@
 echo "This is the web app";
 echo "<br>";
 
+$return_ip = get_ip_address();
+echo "Your IP is :";
+echo $return_ip;
+
 function get_ip_address() {
   // check for shared internet/ISP IP
   if (!empty($_SERVER['HTTP_CLIENT_IP']) && $this->validate_ip($_SERVER['HTTP_CLIENT_IP']))
@@ -41,7 +45,4 @@ function validate_ip($ip) {
      return true;
  }
 
-$return_ip = get_ip_address();
-echo "Your IP is :";
-echo $return_ip;
 ?>
